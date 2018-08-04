@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script type='text/javascript' src="http://bost.ocks.org/mike/fisheye/fisheye.js?0.0.3"> </script>
+<script type='text/javascript' src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"> </script>
+<script src="http://d3js.org/queue.v1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<style>
+
+
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+    label.wall > input{ /* HIDE RADIO */
+        visibility: hidden; /* Makes input not-clickable */
+        position: absolute; /* Remove input from document flow */
+    }
+    label.wall > input + img{ /* IMAGE STYLES */
+        cursor:pointer;
+        border:2px solid transparent;
+    }
+    label.wall > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+        border:2px solid #f00;
+    }
+
+
+
+    html{
+        padding: 10px 30px 10px 30px;
+    }
+
+    div#radios label{
+        font-weight: 300;
+        font-size: 1.5em;
+        padding: 25px 25px 25px 5px;
+        margin: 10px auto;
+        font-family: 'Roboto Condensed', sans-serif;
+        height: 30px;
+        z-index: 9;
+        cursor: pointer;
+        -webkit-transition: all 0.25s linear;
+    }
+
+    #cal{
+        color:#8c564b;
+    }
+    #pro{
+        color:#1f77b4;
+    }
+    #fat{
+        color:#ff7f0e;
+    }
+    #vit{
+        color:#e377c2;
+    }
+    #sug{
+        color:#9467bd;
+    }
+
+    #notes{
+        margin: auto;
+        width: 50%;
+        padding: 85px 55px 5px 55px;
+    }
+    #notes2{
+        margin: auto;
+        width: 50%;
+    }
+
+    ul li{
+        display: inline;
+        padding: 0px 23px 5px 23px;
+    }
+
+    ul{
+        padding: 0px 0px 0px 0px;
+    }
+
+    div#radios form{
+
+        height: 45px;
+    }
+
+      svg.cerealBowl {
+        position: absolute;
+        top: 1px;
+        right: 10px;
+    }
+
+
+    #one,#two,#three
+    {
+        height:50px;
+        width:560px;
+        border:1px #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color:#fff;
+        margin: 0px 5px;
+        overflow:hidden;
+    }
+
+    .arrow
+    {
+        padding:5px;
+        float:right;
+        color:#fff;
+    }
+    .sub
+    {
+        height:320px;
+        width:540px;
+        display:none;
+        border:1px #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color:#fff;
+        margin:0px 5px 5px;
+        padding:10px;
+
+
+    }
+    #one p,#two p,#three p
+    {
+        padding:5px;
+
+    }
+
+</style>
+
+
+<div class="header" id="header">
+    <!--<img src="images/header.png" alt="head" style="width:1200px;height:300px;">-->
+    <h1>Nutritional Facts in your Favourite Cereal</h1>
+</div>
+<br>
+
+
+
+<h2> Choose your favorite cereal </h2>
+<!--Aswathy: here is where I am trying to get the drop down created from the dataset using the js dropdown.js -->
+<!--Aswathy: The section below needs to be commented to see the drop down-->
+<div id="dropown">
+    <select id="cereal_name" name="filter_val" >
+    <option></option>
+    </select>
+    <select id="manufacturer_name" name="filter_val2">
+    <option></option>
+    </select>
+    <script src="dropdown.js"></script>
+</div>
+
+
+<!--&lt;!&ndash;Aswathy: The section below needs to be commented to see the drop down&ndash;&gt;-->
+<!--<div id="one" class="main">-->
+    <!--<span class="arrow">&#9654;</span>-->
+    <!--<p> Kellogg's </p>-->
+<!--</div>-->
+
+<!--<div class="sub">-->
+
+    <!--<div class="input" id="filters">-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="24">-->
+            <!--<img src="images/0.jpg" alt="All Bran" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="1">-->
+            <!--<img src="images/1.jpg" alt="Special K" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="2">-->
+            <!--<img src="images/2.jpg" alt="raisen barn" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="3">-->
+            <!--<img src="images/3.jpg" alt="pops" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="4">-->
+            <!--<img src="images/4.jpg" alt="corn flakes" style="width:100px;height:150px;">-->
+        <!--</label>-->
+        <!--<br>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="5">-->
+            <!--<img src="images/5.jpg" alt="fruit loop" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="6">-->
+            <!--<img src="images/6.jpg" alt="corn flakes" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="7">-->
+            <!--<img src="images/7.jpg" alt="apple jack" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="8">-->
+            <!--<img src="images/8.jpg" alt="krispies" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="9">-->
+            <!--<img src="images/9.jpg" alt="rice krispies" style="width:100px;height:150px;">-->
+        <!--</label>-->
+        <!--<br>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--<div id="two" class="main">-->
+    <!--<span class="arrow">&#9654;</span>-->
+    <!--<p> General Mill </p>-->
+<!--</div>-->
+<!--<div class="sub">-->
+    <!--<div class="input" id="filters">-->
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="10">-->
+            <!--<img src="images/10.jpg" alt="cheerios" style="width:100px;height:150px;">-->
+        <!--</label>-->
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="11">-->
+            <!--<img src="images/11.jpg" alt="chex" style="width:100px;height:150px;">-->
+        <!--</label>-->
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="12">-->
+            <!--<img src="images/12.jpg" alt="corn chex" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="13">-->
+            <!--<img src="images/13.jpg" alt="fiber one" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="14">-->
+            <!--<img src="images/14.jpg" alt="reeces puff" style="width:100px;height:150px;">-->
+        <!--</label>-->
+        <!--<br>-->
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="15">-->
+            <!--<img src="images/15.jpg" alt="coca puffs" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="16">-->
+            <!--<img src="images/16.jpg" alt="lucky charm" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="17">-->
+            <!--<img src="images/17.jpg" alt="boo berry" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="18">-->
+            <!--<img src="images/18.jpg" alt="trix" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="19">-->
+            <!--<img src="images/19.jpg" alt="cookie crisps" style="width:100px;height:150px;">-->
+        <!--</label>-->
+        <!--<br>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--<div id="three" class="main">-->
+    <!--<span class="arrow">&#9654;</span>-->
+    <!--<p> POST </p>-->
+<!--</div>-->
+<!--<div class="sub">-->
+    <!--<div class="input" id="filters">-->
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="20">-->
+            <!--<img src="images/20.jpg" alt="corn flakes" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="21">-->
+            <!--<img src="images/21.jpg" alt="blue berry morning" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="22">-->
+            <!--<img src="images/22.jpg" alt="honey comb" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="23">-->
+            <!--<img src="images/23.jpg" alt="raisen barn" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="0">-->
+            <!--<img src="images/24.jpg" alt="shredded wheat" style="width:100px;height:150px;">-->
+        <!--</label>-->
+        <!--<br>-->
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="25">-->
+            <!--<img src="images/25.jpg" alt="barn flakes" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="26">-->
+            <!--<img src="images/26.jpg" alt="wraffle crips" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="27">-->
+            <!--<img src="images/27.jpg" alt="alpha bit" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="28">-->
+            <!--<img src="images/28.jpg" alt="crisp" style="width:100px;height:150px;">-->
+        <!--</label>-->
+
+        <!--<label class="wall">-->
+            <!--<input type="radio" name="filter" value="29">-->
+            <!--<img src="images/29.jpg" alt="coca pebble" style="width:100px;height:150px;">-->
+        <!--</label>-->
+        <!--<br>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+<h3 id="notes"> All statistical results are presented in percentages which are the nutrient needed for a breakfast for an adult (USDA data). Highlighted cereals also show a percentage for each nutrient.
+    <br><br>100% standard for breakfast </h3>
+<p id = "notes2">
+    Protein:17g;
+    Fat:23g;
+    Carbonhydrates:103g;
+    Fiber:10g;
+    Sugar:30g;
+    Calcium:500mg;
+    Vitamin:900IU
+</p>
+
+
+
+
+
+<script type="text/javascript" src="mydraftscript.js"></script>

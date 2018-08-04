@@ -1,0 +1,81 @@
+Cereal,Manufacturer,Calories,Protein,ProteinPer,Fat,FatPer,Sodium,SodiumPer,Sodium_Range,Fiber,FiberPer,Fiber_Range,Carbohydrates,CarbohydratesPer,Sugars,SugarsPer,Sugars_Range,Potassium,PotassiumPer,Vitamins,Weight,Shelf,Rating
+Apple Cinnamon Cheerios,General Mills,138,3,50,3,11,225,30,High,2,19,Low,13,13,13,42,High,88,6,25,1,1,30
+Basic 4,General Mills,163,4,22,3,11,263,35,High,3,25,Medium,23,22,10,33,High,125,8,25,1,3,37
+Cheerios,General Mills,83,5,26,2,7,218,29,High,2,15,Low,13,12,1,3,Low,79,5,25,1,1,51
+Cinnamon Toast Crunch,General Mills,150,1,7,4,16,263,35,High,0,0,Low,16,16,11,38,High,56,4,25,1,2,20
+Clusters,General Mills,165,5,26,3,13,210,28,High,3,30,Medium,20,19,11,35,High,158,11,25,1,3,40
+Cocoa Puffs,General Mills,110,1,6,1,4,180,24,High,0,0,Low,12,12,13,43,High,55,4,25,1,2,23
+Count Chocula,General Mills,110,1,6,1,4,180,24,High,0,0,Low,12,12,13,43,High,65,4,25,1,2,22
+Crispy Wheat & Raisins,General Mills,125,3,15,1,5,175,23,High,3,25,Medium,14,13,13,42,High,150,10,25,1,3,36
+Golden Grahams,General Mills,138,1,7,1,5,350,46,High,0,0,Low,19,18,11,38,High,56,4,25,1,2,24
+Honey Nut Cheerios,General Mills,138,4,22,1,5,313,41,High,2,19,Low,14,14,13,42,High,113,8,25,1,1,31
+Kix,General Mills,55,1,6,1,2,130,17,Medium,0,0,Low,11,10,2,5,Low,20,1,25,1,2,39
+Lucky Charms,General Mills,110,2,12,1,4,180,24,High,0,0,Low,12,12,12,40,High,55,4,25,1,2,27
+Multi-Grain Cheerios,General Mills,100,2,12,1,4,220,29,High,2,20,Low,15,15,6,20,High,90,6,25,1,1,40
+Oatmeal Raisin Crisp,General Mills,195,5,26,3,13,255,34,High,2,23,Low,20,20,15,50,High,180,12,25,1,3,30
+Raisin Nut Bran,General Mills,150,5,26,3,13,210,28,High,4,38,Medium,16,15,12,40,High,210,14,25,1,3,40
+Total Corn Flakes,General Mills,110,2,12,1,4,200,26,High,0,0,Low,21,20,3,10,Medium,35,2,100,1,3,39
+Total Raisin Bran,General Mills,140,3,18,1,4,190,25,High,4,40,Medium,15,15,14,47,High,230,15,100,2,3,29
+Total Whole Grain,General Mills,100,3,18,1,4,200,26,High,3,30,Medium,16,16,3,10,Medium,110,7,100,1,3,47
+Triples,General Mills,138,3,15,1,5,313,41,High,0,0,Low,26,25,4,13,Medium,75,5,25,1,3,39
+Trix,General Mills,110,1,6,1,4,140,18,Medium,0,0,Low,13,13,12,40,High,25,2,25,1,2,28
+Wheaties,General Mills,100,3,18,1,4,200,26,High,3,30,Medium,17,17,3,10,Medium,110,7,25,1,1,52
+Wheaties Honey Gold,General Mills,138,3,15,1,5,250,33,High,1,13,Low,20,19,10,33,High,75,5,25,1,1,36
+General Mills Averages,General Mills,126,3,15,2,7,221,29,High,1,15,Low,16,16,9,31,High,98,7,25,1,2,34
+All-Bran,Kellogg's,117,7,39,2,7,434,57,High,15,150,High,12,11,8,28,High,534,36,25,1,3,59
+All-Bran with Extra Fiber,Kellogg's,75,6,35,0,0,210,28,High,21,210,High,12,12,0,0,Low,495,33,25,1,3,94
+Apple Jacks,Kellogg's,110,2,12,0,0,125,16,Medium,1,10,Low,11,11,14,47,High,30,2,25,1,2,33
+Corn Flakes,Kellogg's,100,2,12,0,0,290,38,High,1,10,Low,21,20,2,7,Low,35,2,25,1,1,46
+Corn Pops,Kellogg's,110,1,6,0,0,90,12,Medium,1,10,Low,13,13,12,40,High,20,1,25,1,2,36
+Cracklin' Oat Bran,Kellogg's,165,5,26,5,20,210,28,High,6,60,High,15,15,11,35,High,240,16,25,1,3,40
+Crispix,Kellogg's,110,2,12,0,0,220,29,High,1,10,Low,21,20,3,10,Medium,30,2,25,1,3,47
+Froot Loops,Kellogg's,110,2,12,1,4,125,16,Medium,1,10,Low,11,11,13,43,High,30,2,25,1,2,32
+Frosted Flakes,Kellogg's,138,1,7,0,0,250,33,High,1,13,Low,18,17,14,46,High,31,2,25,1,1,31
+Frosted Mini-Wheats,Kellogg's,120,4,21,0,0,0,0,Low,4,36,Medium,17,16,8,28,High,120,8,25,1,2,58
+Fruitful Bran,Kellogg's,160,4,23,0,0,319,42,High,7,67,High,19,18,16,53,High,253,17,25,1,3,41
+Just Right Crunchy  Nuggets,Kellogg's,110,2,12,1,4,170,22,High,1,10,Low,17,17,6,20,High,60,4,100,1,3,37
+Just Right Fruit & Nut,Kellogg's,175,4,22,1,5,213,28,High,3,25,Medium,25,24,11,38,High,119,8,100,1,3,36
+Mueslix Crispy Blend,Kellogg's,213,4,23,3,12,200,26,High,4,40,Medium,23,22,17,58,High,213,14,25,2,3,30
+Nut & Honey Crunch,Kellogg's,160,3,16,1,6,253,33,High,0,0,Low,20,19,12,40,High,53,4,25,1,2,30
+Nutri-Grain Almond-Raisin,Kellogg's,186,4,23,3,12,293,39,High,4,40,Medium,28,27,9,31,High,173,12,25,1,3,41
+Nutri-Grain Wheat,Kellogg's,90,3,18,0,0,170,22,High,3,30,Medium,18,17,2,7,Low,90,6,25,1,3,60
+Product 19,Kellogg's,100,3,18,0,0,320,42,High,1,10,Low,20,19,3,10,Medium,45,3,100,1,3,42
+Raisin Bran,Kellogg's,150,4,22,1,5,263,35,High,6,63,High,18,17,15,50,High,300,20,25,1,2,39
+Raisin Squares,Kellogg's,135,3,18,0,0,0,0,Low,3,30,Medium,23,22,9,30,High,165,11,25,1,3,55
+Rice Krispies,Kellogg's,110,2,12,0,0,290,38,High,0,0,Low,22,21,3,10,Medium,35,2,25,1,1,41
+Smacks,Kellogg's,138,3,15,1,5,88,12,Medium,1,13,Low,11,11,19,63,High,50,3,25,1,2,31
+Special K,Kellogg's,110,6,35,0,0,230,30,High,1,10,Low,16,16,3,10,Medium,55,4,25,1,1,53
+Kellogg's Averages,Kellogg's,130,3,19,1,4,207,27,High,4,37,Low,18,17,9,31,High,138,9,25,1,2,44
+100% Bran,Nabisco,117,7,39,2,7,217,29,High,17,167,High,8,8,10,33,High,468,31,25,1,3,68
+Shredded Wheat,Nabisco,80,2,12,0,0,0,0,Low,3,30,Medium,16,16,0,0,Low,95,6,0,1,1,68
+Shredded Wheat'n Bran,Nabisco,120,4,23,0,0,0,0,Low,5,53,High,25,25,0,0,Low,186,12,0,1,1,74
+Shredded Wheat,Nabisco,120,4,23,0,0,0,0,Low,4,40,Medium,27,26,0,0,Low,160,11,0,1,1,73
+Strawberry Fruit Wheats,Nabisco,90,2,12,0,0,15,2,Low,3,30,Medium,15,15,5,17,Medium,90,6,25,1,2,59
+Nabisco Averages,Nabisco,105,4,22,0,1,46,6,Low,6,64,Medium,18,18,3,10,Low,200,13,25,1,2,69
+Bran Flakes,Post,120,4,23,0,0,279,37,High,7,67,High,17,17,7,22,High,253,17,25,1,3,53
+"Fruit & Fibre Dates, Walnuts, and Oats",Post,160,4,23,3,12,213,28,High,7,67,High,16,15,13,44,High,266,18,25,1,3,41
+Fruity Pebbles,Post,138,1,7,1,5,169,22,High,0,0,Low,16,16,15,50,High,31,2,25,1,2,28
+Golden Crisp,Post,112,2,13,0,0,50,7,Medium,0,0,Low,12,12,17,56,High,45,3,25,1,1,35
+Grape Nuts Flakes,Post,112,3,20,1,5,157,21,High,3,34,Medium,17,16,6,19,High,95,6,25,1,3,52
+Grape Nuts,Post,193,5,31,0,0,298,39,High,5,53,High,30,29,5,18,High,158,11,25,1,3,53
+Great Grains Pecan,Post,200,5,29,5,22,125,16,Medium,5,50,High,22,21,7,22,High,167,11,25,1,3,46
+Honeycomb,Post,74,1,4,0,0,121,16,Medium,0,0,Low,9,9,7,25,High,23,2,25,1,1,29
+Post Natural Raisin Bran,Post,160,4,23,1,6,266,35,High,8,80,High,15,14,19,62,High,346,23,25,1,3,38
+Post Averages,Post,141,3,19,1,5,186,25,High,4,39,High,17,17,11,35,High,154,10,25,1,2,42
+100% Natural Bran,Quaker Oats,120,3,18,5,22,15,2,Low,2,20,Low,8,8,8,27,High,135,9,0,1,3,34
+Cap'n Crunch,Quaker Oats,150,1,7,3,11,275,36,High,0,0,Low,15,15,15,50,High,44,3,25,1,2,18
+Honey Graham Ohs,Quaker Oats,120,1,6,2,9,220,29,High,1,10,Low,12,12,11,37,High,45,3,25,1,2,22
+Life,Quaker Oats,133,5,31,3,12,200,26,High,3,27,Medium,16,15,8,27,High,126,8,25,1,2,45
+Puffed Rice,Quaker Oats,50,1,6,0,0,0,0,Low,0,0,Low,13,13,0,0,Low,15,1,0,1,3,61
+Puffed Wheat,Quaker Oats,50,2,12,0,0,0,0,Low,1,10,Low,10,10,0,0,Low,50,3,0,1,3,63
+Quaker Oat Squares,Quaker Oats,150,6,35,2,7,203,27,High,3,30,Medium,21,20,9,30,High,165,11,25,1,3,50
+Quaker Oats Averages,Quaker Oats,110,3,16,2,8,130,17,High,1,14,Low,14,13,7,24,High,83,6,25,1,3,42
+Almond Delight,Ralston Purina,138,3,15,3,11,250,33,High,1,13,Low,18,17,10,33,High,125,8,25,1,3,34
+Bran Chex,Ralston Purina,120,3,16,1,6,266,35,High,5,53,High,20,19,8,27,High,166,11,25,1,1,49
+Corn Chex,Ralston Purina,110,2,12,0,0,280,37,High,0,0,Low,22,21,3,10,Medium,25,2,25,1,1,41
+Double Chex,Ralston Purina,125,3,15,0,0,238,31,High,1,13,Low,23,22,6,21,High,100,7,25,1,3,44
+"Muesli Raisins, Dates & Almonds",Ralston Purina,150,4,24,3,13,95,13,Medium,3,30,Medium,16,16,11,37,High,170,11,25,1,3,37
+"Muesli Raisins, Peaches & Pecans",Ralston Purina,150,4,24,3,13,150,20,High,3,30,Medium,16,16,11,37,High,170,11,25,1,3,34
+Rice Chex,Ralston Purina,96,1,5,0,0,209,27,High,0,0,Low,20,19,2,6,Low,26,2,25,1,1,42
+Wheat Chex,Ralston Purina,133,4,23,1,6,306,40,High,4,40,Medium,23,22,4,13,Medium,153,10,25,1,1,50
+Ralston Purina Averages,Ralston Purina,128,3,17,1,6,224,29,High,2,22,Medium,20,19,7,23,High,117,8,25,1,2,42
